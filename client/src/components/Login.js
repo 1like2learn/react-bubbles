@@ -11,7 +11,7 @@ const defaultCredentials = {
 const Login = () => {
   // make a post request to retrieve a token from the api
   // when you have handled the token, navigate to the BubblePage route
-  const [ credentials, setCredentials ] = useState();
+  const [ credentials, setCredentials ] = useState(defaultCredentials);
   const history = useHistory()
 
   const changeHandler = event => {
